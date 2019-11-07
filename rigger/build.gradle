@@ -1,5 +1,7 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.CherryLover'
 
 android {
 
@@ -68,11 +70,11 @@ tasks.withType(Javadoc) {
     options.addStringOption('charSet', 'UTF-8')
 }
 
-publish {
-    userOrg = rootProject.ext.rigger.userOrg
-    groupId = rootProject.ext.rigger.groupId
-    artifactId = rootProject.ext.rigger.artifactId
-    publishVersion = rootProject.ext.rigger.publishVersion
-    desc = rootProject.ext.rigger.desc
-    website = rootProject.ext.rigger.website
-}
+//publish {
+//    userOrg = rootProject.ext.rigger.userOrg
+//    groupId = rootProject.ext.rigger.groupId
+//    artifactId = rootProject.ext.rigger.artifactId
+//    publishVersion = rootProject.ext.rigger.publishVersion
+//    desc = rootProject.ext.rigger.desc
+//    website = rootProject.ext.rigger.website
+//}
